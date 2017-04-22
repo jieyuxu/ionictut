@@ -1,0 +1,194 @@
+<!--Instructions For VANNA AND NANCY
+
+  Hi guys this is really all that's left to do:
+  1. integrate your demos into the site
+  2. My visualization of this site is a one page site where to navigate to the next section all you have to do is click an arrow button. Basically all you need to do is link next buttons to anchors for the different sections
+  3. Change the images. I left the mountain/ice looking thing images there for you to replace. Note: it's best if you save an image and then link bc you need them to be all the same size. otherwise it will look weird bc the section height is defined by the height of the image.
+  4. fix anchors. some not accurate. 
+  5. Some of the info need more explaining (like the commands in CLI) that we verbally explained in our presentation but isn't in writing. fill that in.
+
+-->
+
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IONIC by Detective Ventriloquist</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+<!--Nav bar ends -->
+
+  <div class="row">
+    <div class="large-12 columns">
+    <div class="off-canvas-content" data-off-canvas-content>
+      <div class="nav-bar">
+          <div class="nav-bar-left">
+            <a class="nav-bar-logo"><b>IONIC 101</b></a>
+          </div>
+          <div class="nav-bar-right">
+            <ul class="menu">
+              <li class="hide-for-small-only"><a href="#whatis">WHAT IS IONIC</a></li>
+              <li class="hide-for-small-only"><a href="#pc">PROS/CONS</a></li>
+              <li class="hide-for-small-only"><a href="#battle">NATIVE V. WEB APPS</a></li>
+              <li class="hide-for-small-only"><a href="#hybrid">HYBRID APPS</a></li>
+              <li class="hide-for-small-only"><a href="#boot">BOOTSTRAP & IONIC</a></li>
+              <li class="hide-for-small-only"><a href="#creator">ONLINE CREATOR</a></li>
+              <li class="hide-for-small-only"><a href="#cli">IONIC CLI</a></li>
+              <li>
+              <li>
+              </li>
+            </ul>
+        </div>
+      </div>
+     </div>
+      </div>
+     </div>
+
+    <body>
+      <div class="marketing-site-content-section">
+        <div class="marketing-site-content-section-img">
+          <img src="https://images.pexels.com/photos/256046/pexels-photo-256046.jpeg?h=350&auto=compress&cs=tinysrgb" alt="" />
+        </div>
+        <div class="marketing-site-content-section-block" id="whatis">
+          <h3 class="marketing-site-content-section-block-header">What is IONIC?</h3>
+          <p class="marketing-site-content-section-block-subheader subheader">Ionic is a free, open source framework for building mobile apps. Developers use web technologies like HTML, CSS, and JS to build mobile apps in the Ionic framework. <br><br>Visit <a href="http://ionicframework.com/">ionic's website</a> or peep their <a href="http://ionicframework.com/developers/">docs</a> when you get the chance. There're some cool things there.</p><br/>
+
+          <a href="#pc"><button class="button-hover-like button">Next</button></a>
+
+        </div>
+
+        <div class="marketing-site-content-section-block small-order-2 medium-order-1">
+          <h3 class="marketing-site-content-section-block-header" id="pc">Advantages of Using Ionic</h3>
+          <p class="marketing-site-content-section-block-subheader subheader">
+            <ul>
+              <li>Efficient for prototyping</li>
+              <li>Developers who do not know Swift/Java/Objective C can still build mobile apps as long as they know how to build web apps</li>
+              <li>Can emulate an iOS/Android environment for testing
+                <ul>
+                  <li>Can also deploy code (written once) to different platforms</li>
+                </ul>
+              </li>
+              <li>Ionic syntax is similar to HTML/JS</li>
+              <li>Live reload</li>
+            </ul>
+          </p>  
+          <a href="#battle"><button class="button-hover-like button">Next</button></a>
+        </div>
+
+        <div class="marketing-site-content-section-block small-order-1 medium-order-2" id="block2">
+          <h3 class="marketing-site-content-section-block-header">Disadvantages of Using Ionic</h3>
+          <p class="marketing-site-content-section-block-subheader subheader">
+            <ul>
+              <li>Additional features cost money </li>
+              <li>The tutorial parts of their documentation are not beginner friendly</li>
+              <li>Requires many node packages to be installed in order to use</li>
+            </ul>
+          </p>
+        </div>
+
+        <div class="marketing-site-content-section-img" id="battle">
+          <img src="https://images.pexels.com/photos/256046/pexels-photo-256046.jpeg?h=350&auto=compress&cs=tinysrgb" alt="" />
+        </div>
+        <div class="marketing-site-content-section-block">
+          <h3 class="marketing-site-content-section-block-header">Ye Old Native App v. Web App Battle</h3>
+            <table class="marketing-site-content-section-block-subheader subheader">
+              <tr>
+                <td>Native Apps</td>
+                <td>Web Apps</td>
+              </tr>
+              <tr>
+                <td><ul>
+                  <li>Built on programming languages like Objective-C and Java</li>
+                  <li>Installed via app stores</li>
+                  <li>Good at accessing phone data</li>
+                  <li>Push notifications access</li>
+                  <li>Work offline and in the background</li>
+                  <li>Faster than web apps</li>
+                </ul></td>
+
+                <td>
+                  <ul>
+                    <li>Built on languages like Javascript, CSS, and HTML</li>
+                    <li>Live on browsers</li>
+                    <li>Cheaper to develop</li>
+                    <li>More access to resources like APIs</li>
+                    <li>Scalable across many platforms</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          <a href="#hybrid"><button class="button-hover-like button">Next</button></a>
+        </div>
+
+        <div class="marketing-site-content-section-block small-order-2 medium-order-1" id="hybrid">
+          <h3 class="marketing-site-content-section-block-header">Introducing...the HYBRID APP</h3>
+          <p class="marketing-site-content-section-block-subheader subheader">Hybrid apps combine the power of native and web apps to reap the benefits of both. They use a NATIVE infrastructure but contain WEB-BASED content. Think of them as apps with a browser embedded inside.
+
+          There are, however, some cons of hybrid apps (nothing is perfect):
+            <ul>
+              <li>Games run better on native apps</li>
+              <li>Slower performance unless optimized</li>
+              <li>May experience web-based glitches</li>
+            </ul> 
+          </p>
+          <a href="#boot"><button class="button-hover-like button">Next</button></a>
+        </div>
+        
+        <div class="marketing-site-content-section-img small-order-1 medium-order-2">
+          <img src="https://images.pexels.com/photos/300857/pexels-photo-300857.jpeg?h=350&auto=compress&cs=tinysrgb" alt="" />
+        </div>
+
+
+        <div class="marketing-site-content-section-img small-order-1 medium-order-2">
+          <img src="https://images.pexels.com/photos/300857/pexels-photo-300857.jpeg?h=350&auto=compress&cs=tinysrgb" alt="" />
+        </div>
+
+      <div class="marketing-site-content-section-block small-order-2 medium-order-1" id="boot">
+        <h3 class="marketing-site-content-section-block-header">Two Best Buds, Ionic & Bootstrap</h3>
+        <p class="marketing-site-content-section-block-subheader subheader">
+          Ionic offers some copy and pasteable elements to help users quickly put together apps. They have components and JS snippets, like buttons, to help you kickstart the HTML/front-end side of your app. They also have a set of icons, called ionicons, that are free for users to use in their app. <br><br>
+
+          Look at the snippets to the left. The top one is a Ionic button snippet and the bottom one is a Bootstrap snippet.
+        </p>
+        <a href="#creator"><button class="button-hover-like button">Next</button></a>
+      </div>
+
+      <div class="marketing-site-content-section-block small-order-2 medium-order-1" id="creator">
+        <h3 class="marketing-site-content-section-block-header">Ionic Online Creator</h3>
+        <p class="marketing-site-content-section-block-subheader subheader">
+          Don't know how to code? You can still use Ionic using their online drag and drop creator! It is customizable and super easy to use. It's really useful for prototyping and visualizing what your app will look like on an iOS or Android device.
+        </p>      
+        <a href="#cli"><button class="button-hover-like button">Next</button>
+      </div></a>
+
+      <div class="marketing-site-content-section-img small-order-1 medium-order-2">
+        <img src="https://images.pexels.com/photos/300857/pexels-photo-300857.jpeg?h=350&auto=compress&cs=tinysrgb" alt="" />
+      </div>
+
+      <div class="marketing-site-content-section-img small-order-1 medium-order-2">
+        <img src="https://images.pexels.com/photos/300857/pexels-photo-300857.jpeg?h=350&auto=compress&cs=tinysrgb" alt="" />
+      </div>
+
+      <div class="marketing-site-content-section-block small-order-2 medium-order-1" id="cli">
+        <h3 class="marketing-site-content-section-block-header">Ionic Command Line Interface (CLI)</h3>
+        <p class="marketing-site-content-section-block-subheader subheader">
+          If you're a more experienced programmer, you may be interested in using Ionic's command land. It gives you more flexibility for design than the creator. You can also link backend scripts to your code and customize the Javascript your app currently uses. Some crucial Ionic commands to know:
+            <ul>
+              <code>
+              <li>ionic start <app></li> <!--include explanations about each command-->
+              <li>ionic serve</li>
+              <li>ionic build <simulator></li>
+              </code>
+            </ul>
+        </p>      
+        <a href="#whatis"><button class="button-hover-like button">Back to Top</button></a>
+      </div>
+
+
+  </body>
+</html>
